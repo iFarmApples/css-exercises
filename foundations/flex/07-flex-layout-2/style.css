@@ -23,18 +23,28 @@ body {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex: 0 0 auto;
+  align-self: stretch;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  max-width: 600px;
+  min-width: 300px;
+  max-width: 300px;
   flex: 1;
+  padding: 10px;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  padding: 50px;
+}
+
+.content {
+  display: flex;
+  align-items: start;
 }
